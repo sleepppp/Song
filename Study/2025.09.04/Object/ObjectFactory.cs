@@ -25,4 +25,11 @@
         MonsterType randomMonsterType = (MonsterType)random.Next(1, (int)MonsterType.End);
         return CreateMoster(randomMonsterType);
     }
+
+    public static Npc CreateNpc(NpcType inType)
+    {
+        Npc result = new Npc();
+        result.InitNpc("상인", 100, 100, inType);
+        return result;
+    }
 }

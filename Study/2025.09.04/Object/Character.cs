@@ -4,6 +4,9 @@
     protected int hp;
     protected int atk;
 
+    public int GetHp() { return hp; }
+    public int GetAtk() { return atk; }
+
     public void InitCharacter(string inName, int inHp, int inAtk)
     {
         name = inName;
@@ -17,6 +20,11 @@
         Console.WriteLine($"Name : {name}");
         Console.WriteLine($"hp : {hp}");
         Console.WriteLine($"atk : {atk}");
+    }
+
+    public void ApplyDamage(int damage)
+    {
+        hp -= damage;
     }
 }
 

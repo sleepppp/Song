@@ -6,14 +6,14 @@
     Storage,
 }
 
-
 public class Npc : Character
 {
     protected NpcType npcType;
 
-    public bool CanInteraction(Character inCharacter)
+    public void InitNpc(string inName, int inHp, int inAtk, NpcType inNpc)
     {
-        //if (inCharacter와 나의 거리가 < GameConfig.InteractionRange)
-        return true;
+        InitCharacter(inName, inHp, inAtk);
+
+        npcType = inNpc;
     }
 }
