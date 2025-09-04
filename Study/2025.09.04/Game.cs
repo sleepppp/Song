@@ -33,6 +33,8 @@ public class Game
         otherCharacters.Add(ObjectFactory.CreateRandomMonster());
         otherCharacters.Add(ObjectFactory.CreateRandomMonster());
         otherCharacters.Add(ObjectFactory.CreateRandomMonster());
+
+        //깃테스트
     }
 
     public void Run()
