@@ -1,6 +1,12 @@
-﻿class Game
+﻿
+/* class Game
+ * 용도 :
+ * 역할 : 
+ * 왜 굳이 class로 만들었을까? 
+ */
+class Game
 {
-    private Card[] cards;
+    private Card[] cards = new Card[52];
     private int gameCount;
 
     public void Init(int inGameCount)
