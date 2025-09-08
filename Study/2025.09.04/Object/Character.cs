@@ -3,6 +3,7 @@
     protected string name;
     protected int hp;
     protected int atk;
+    protected Character[] characters = new Character[100];
 
     public int GetHp() { return hp; }
     public int GetAtk() { return atk; }
